@@ -2,32 +2,13 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 
 execute pathogen#infect()
 
-" Solarized options - TODO: find a place fore these.
-" option name               default     optional
-" ------------------------------------------------
-" g:solarized_termcolors=   256     |   16
-" g:solarized_termtrans =   0       |   1
-" g:solarized_degrade   =   0       |   1
-" g:solarized_bold      =   1       |   0
-" g:solarized_underline =   1       |   0
-" g:solarized_italic    =   1       |   0
-let g:solarized_bold = 0
-let g:solarized_underline = 0
-let g:solarized_italic = 0
-" g:solarized_style     =   "dark"  |   "light"
-" g:solarized_contrast  =   "normal"|   "high" or "low"
-" ------------------------------------------------
-
-    "  gui options  (no toolbar, autoselect on)
+"  gui options  (no toolbar, autoselect on)
 set go-=T
 set go+=a
 
-" colorscheme
-syntax enable
+syntax on
 "set background=light
-set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
+"set background=dark
 
 " backup and swap files
 set nobackup
