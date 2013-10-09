@@ -164,8 +164,8 @@ else
 en
 
 " enable line numbering
-set number
-" set relativenumber
+" set number
+set relativenumber
 
 " move lines up and down with +/-
 nnoremap ,+ ddkP
@@ -267,4 +267,8 @@ vnoremap <F5> <ESC>:call ToggleBackground()<CR>
 
 " quick change working directory to current files director
 nnoremap <leader>cd :cd %:p:h<cr>:pwd<cr>
+
+" UltiSnips configurations
+" let g:UltiSnipsJumpForwardTrigger="<tab>"
+
 
