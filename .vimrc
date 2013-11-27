@@ -7,7 +7,11 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 " setup find with tabcompletion
-set path=$PWD/**
+if has('win32') || has('win64')
+    set path=.\**
+else
+    set path=$PWD/**
+endif
 set wildmode=longest,list,full
 set wildmenu
 
