@@ -4,8 +4,12 @@ if has('win32') || has('win64')
 endif
 
 runtime bundle/vim-pathogen/autoload/pathogen.vim
-
 execute pathogen#infect()
+
+" setup find with tabcompletion
+set path=$PWD/**
+set wildmode=longest,list,full
+set wildmenu
 
 "  gui options  (no toolbar, autoselect on)
 set go-=T
