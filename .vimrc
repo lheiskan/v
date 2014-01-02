@@ -122,6 +122,15 @@ autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
 augroup end
 "}}}
     
+" Coffeescript  ----{{{
+augroup coffee
+autocmd!
+autocmd FileType coffee setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
+autocmd FileType coffee setlocal foldmethod=indent nofoldenable
+autocmd FileType coffee nnoremap <localleader>c I//
+autocmd FileType coffee noremap <buffer>  <c-f> :call JsBeautify()<cr>
+augroup end
+"}}}
 
 
 
