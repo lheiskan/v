@@ -6,6 +6,9 @@ endif
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
+# utf-8 default encoding
+set encoding=utf-8
+
 " setup find with tabcompletion
 if has('win32') || has('win64')
     set path=.\**
