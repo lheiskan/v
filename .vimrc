@@ -168,7 +168,7 @@ nnoremap <space> za
 
 " statusline
 set ruler
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+" set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 " quick edit .vimrc
 nnoremap <leader>ev :vsplit $VIM/.vimrc<CR>
@@ -211,6 +211,9 @@ nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 vnoremap <leader>' x<esc>i' '<esc>hvpgv
 vnoremap <leader>" x<esc>i" "<esc>hvpgv
+
+" . in Visual selection, applies the previous command to selection
+vnoremap . :norm.<CR>
 
 " H to begining of line
 " nnoremap H 0
