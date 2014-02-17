@@ -6,7 +6,7 @@ endif
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
-# utf-8 default encoding
+" utf-8 default encoding
 set encoding=utf-8
 
 " setup find with tabcompletion
