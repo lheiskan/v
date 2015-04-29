@@ -6,6 +6,9 @@ endif
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
+" netrw defaults
+let g:netrw_liststyle=3
+
 " utf-8 default encoding
 set encoding=utf-8
 
