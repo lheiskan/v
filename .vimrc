@@ -174,8 +174,8 @@ set ruler
 " set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 " quick edit .vimrc
-nnoremap <leader>ev :vsplit $VIM/.vimrc<CR>
-nnoremap <leader>sv :source $VIM/.vimrc<CR>
+nnoremap <leader>ev :vsplit ~/.vim/.vimrc<CR>
+nnoremap <leader>sv :source ~/.vim/.vimrc<CR>
 nnoremap <leader>ep :execute "rightbelow vsplit ". bufname("#")<CR>
 
 " Ctrl-j/k deletes blank line below/above, and Alt-j/k inserts.
