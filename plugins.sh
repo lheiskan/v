@@ -12,3 +12,6 @@ git clone git://github.com/guns/vim-clojure-static.git
 git clone https://github.com/tpope/vim-surround.git
 git clone https://github.com/tpope/vim-repeat.git
 git clone https://github.com/vim-scripts/paredit.vim.git
+
+git clone https://github.com/moll/vim-node.git ~/.vim/bundle/node
+
